@@ -70,7 +70,7 @@ const forgotPassword = async (req, res) => {
             from: 'mahtab6kn@gmail.com',
             to: email,
             subject: 'Reset Password',
-            text: `http://localhost:5173/resetPassword/${token}`
+            text: `https://mahtab-gofood.netlify.app//resetPassword/${token}`
         };
 
         transporter.sendMail(mailOptions, function (error, info) {
