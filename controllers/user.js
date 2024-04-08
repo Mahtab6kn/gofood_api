@@ -1,6 +1,8 @@
 const User = require('../models/user')
 const bcrypt = require('bcrypt');
 require('dotenv').config();
+const nodemailer = require('nodemailer');
+const jwt = require('jsonwebtoken')
 
 //    Signup Controller 
 const signupData = async (req, res) => {
